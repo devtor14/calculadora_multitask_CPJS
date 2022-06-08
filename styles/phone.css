@@ -15,6 +15,7 @@ body{
     background-image: url(https://images.pexels.com/photos/5186869/pexels-photo-5186869.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+    trasition-dutarion: 500ms;
 }
 a{
     text-decoration: none;
