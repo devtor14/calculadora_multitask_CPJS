@@ -12,7 +12,7 @@ body{
     width: 100%;
     height: 100vh;
     display: grid;
-    background-image: url(.../assets/wallpaper.jpg);
+    background-image: url(https://images.pexels.com/photos/5186869/pexels-photo-5186869.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
 }
