@@ -1,0 +1,272 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    background-image: url(/assets/wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+a{
+    text-decoration: none;
+}
+
+/* ------MENU STYLES------ */
+
+.menu-body{
+    grid-template-rows: auto 3rem;
+}
+.menu-global-body{
+    grid-template-rows: 3rem auto 3rem;
+}
+
+/* ------GLOBAL STYLES------ */
+
+/* HEADER */
+
+header{
+    padding: 0 1rem;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+}
+header section a i{
+    font-size: 1.8rem;
+
+    color: white;
+    text-shadow: 0 .3rem .2rem black;
+    transition-duration: 250ms;
+}
+header section a i:hover{
+    font-size: 1.8rem;
+
+    color: #48e126;
+    text-shadow: 0 .1rem .1rem black;
+}
+header section a i:hover{
+    font-size: 1.8rem;
+
+    color: #ea41a6;
+    text-shadow: 0 .1rem .1rem black;
+}
+
+/* MAIN */
+
+.main-menu-container{
+    width: 90%;
+    place-self: center;
+    text-align: center;
+}
+.main-title{
+    margin-bottom: 2rem;
+    
+    font-family: 'Lobster', sans-serif;
+    text-align: center;
+    font-size: 4.8rem;
+    
+    text-shadow: 0 .4rem 0 black;
+}
+.main-subtitle{
+    margin-bottom: 2rem;
+    
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    
+    text-shadow: .1rem .2rem .1rem black;
+}
+.buttons{
+    width: 80%;
+    height: 5rem;
+    margin-bottom: 1.4rem;
+    display: inline-block;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+
+    background-color: white;
+    border: none;
+    border-radius: .6rem;
+    box-shadow: 0 .4rem .8rem 0 black;
+    transition-duration: 250ms;
+}
+.buttons:hover{
+    color: white;
+
+    font-weight: 600;
+
+    background-color: transparent;
+    box-shadow: 0 .2rem .4rem 0 black;
+    text-shadow: 0 .2rem .1rem black;
+}
+
+/* FOOTER */
+
+footer{
+    padding: 0 1rem;
+    display: flex;
+    align-self: center;
+    justify-content: space-between
+}
+footer section a{
+    font-size: 1.1rem;
+    text-decoration: underline;
+}
+footer div a i{
+    margin-left: 1rem;
+
+    font-size: 1.8rem;
+
+    color: white;
+    text-shadow: 0 .3rem .2rem black;
+}
+footer a i:hover{
+    font-size: 1.8rem;
+    
+    color: #025ad3;
+    text-shadow: 0 .1rem .1rem black;
+}
+
+/* ------FORM MENU STYLES------ */
+
+/* MAIN */
+
+.main-form{
+    width: 90%;
+    place-self: center;
+}
+form{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+form section{
+    width: 100%;
+}
+.form-label{
+    font-size: 1.6rem;
+    font-weight: 600;
+
+    text-shadow: .1rem .2rem .1rem black;
+}
+.form-input{
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    border: .1rem solid rgba(0, 0, 0, 0.5);
+    border-radius: .6rem;
+    transition-duration: 500ms;
+}
+.form-input:hover{
+    background-color: rgba(0, 0, 0, 0.75);
+    border-color: white;
+}
+.form-input input{
+    width: 90%;
+    height: 100%;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+
+    background-color: transparent;
+    color: white;
+    outline: none;
+    border: none;
+    text-shadow: 0 .1rem .1rem black;
+}
+.form-input p{
+    font-size: 1.4rem;
+}
+.buttons-container{
+    display: flex;
+    justify-content: space-between;
+}
+.doubleButton{
+    width: 49%;
+}
+.formButton{
+    width: 100%;
+}
+
+/* ------TRIANGLES------ */
+
+/* MAIN */
+
+.triangle-input input{
+    width: 80%;
+}
+.triangle-form section{
+    width: 49%;
+}
+
+/* ------ISOS TRIANGLES------ */
+
+/* MAIN */
+
+.isos-input input{
+    width: 80%;
+}
+.isos-buttons-container{
+    display: flex;
+}
+.isos-buttons-container button:nth-child(2){
+    margin: 0 1rem;
+}
+.buttonsIsos{
+    width: 100%;
+    flex: 1 1 30%;
+}
+.isos-form section:nth-child(1){
+    width: 49%;
+}
+.isos-form section:nth-child(2){
+    width: 49%;
+}
+
+/* ------ABOUT ME STYLES------ */
+
+/* MAIN */
+
+.about-card{
+    width: 17.5rem;
+    height: 17.5rem;
+    margin-bottom: 2rem;
+    display: inline-grid;
+    place-items: center;
+
+    background-color: rgba(255, 255, 255, 0.75);
+    box-shadow: 0 .4rem .6rem 0 black;
+    border-radius: 1rem;
+}
+.about-card > img{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 1rem;
+}
+
+/* FOOTER */
+
+.footer-aboutme{
+    justify-content: center;
+}
+.footer-aboutme div a i{
+    margin-left: 0rem;
+}
+.footer-aboutme div a:nth-child(2) i{
+    margin: 0 1rem;
+}
