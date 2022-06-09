@@ -1,5 +1,13 @@
 var last = document.cookie;
 
+window.onload = function(){
+    setTimeout(() => {
+        let contenedor = document.getElementById("loader-container");
+        contenedor.style.visibility = "hidden";
+        contenedor.style.opacity = "0";
+    }, 1000);   
+}
+
 function move(html){
     setTimeout(() => {
         parent.location = html;

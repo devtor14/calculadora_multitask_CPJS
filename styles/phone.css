@@ -12,12 +12,49 @@ body{
     width: 100%;
     height: 100vh;
     display: grid;
-    background-image: url(./assets/wallpaper.jpg);
+    background-image: url(../assets/wallpaper.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 a{
     text-decoration: none;
+}
+
+/* ------LOAD SCREEN STYLES------ */
+
+#loader-container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    position: fixed;
+    z-index: 10000;
+
+    background-color: #111111;
+    transition: all 1s ease;
+}
+#loader-container p{
+    font-size: 2rem;
+    font-family: 'Lobster', sans-serif;
+    text-align: center;
+}
+#loader{
+    width: 10rem;
+    height: 10rem;
+    margin-bottom: 2rem;
+    border: 1.5rem solid rgba(255, 255, 255, 0.5);
+    border-top: 1.5rem solid rgb(255, 255, 255);
+
+    border-radius: 50%;
+    animation: girar 1.4s infinite;
+}
+@keyframes girar{
+    form{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }
 
 /* ------MENU STYLES------ */
@@ -40,21 +77,20 @@ header{
     justify-content: space-between;
 }
 header section a i{
-    font-size: 1.8rem;
+    font-size: 2.25rem;
 
     color: white;
     text-shadow: 0 .3rem .2rem black;
     transition-duration: 250ms;
 }
+header section:nth-child(2) a i{
+    font-size: 2rem;
+}
 header section a i:hover{
-    font-size: 1.8rem;
-
     color: #48e126;
     text-shadow: 0 .1rem .1rem black;
 }
 header section a i:hover{
-    font-size: 1.8rem;
-
     color: #ea41a6;
     text-shadow: 0 .1rem .1rem black;
 }
@@ -108,6 +144,15 @@ header section a i:hover{
     box-shadow: 0 .2rem .4rem 0 black;
     text-shadow: 0 .2rem .1rem black;
 }
+.buttons:disabled{
+    color: white;
+
+    font-weight: 600;
+
+    background-color: rgba(0, 0, 0, 0.25);
+    box-shadow: 0 .2rem .4rem 0 black;
+    text-shadow: 0 .2rem .1rem black;
+}
 
 /* FOOTER */
 
@@ -118,20 +163,18 @@ footer{
     justify-content: space-between
 }
 footer section a{
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     text-decoration: underline;
 }
 footer div a i{
-    margin-left: 1rem;
+    margin-left: 1.2rem;
 
-    font-size: 1.8rem;
+    font-size: 2rem;
 
     color: white;
     text-shadow: 0 .3rem .2rem black;
 }
 footer a i:hover{
-    font-size: 1.8rem;
-    
     color: #025ad3;
     text-shadow: 0 .1rem .1rem black;
 }
@@ -203,7 +246,7 @@ form section{
     width: 100%;
 }
 
-/* ------TRIANGLES------ */
+/* ------TRIANGLES STYLES------ */
 
 /* MAIN */
 
@@ -238,6 +281,35 @@ form section{
     width: 49%;
 }
 
+/* ------DISCOUNTS STYLES------ */
+
+/* MAIN */
+
+.discounTitle{
+    margin-bottom: 1rem;
+}
+.discount-form section{
+    width: 49%;
+}
+.discount-form input{
+    width: 90%;
+}
+.cupon-input input{
+    width: 100%;
+}
+.res-label{
+    margin-bottom: .5rem;
+    text-align: center;
+}
+.resul-des{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.resul-des section{
+    width: 49%;
+}
+
 /* ------ABOUT ME STYLES------ */
 
 /* MAIN */
@@ -268,5 +340,5 @@ form section{
     margin-left: 0rem;
 }
 .footer-aboutme div a:nth-child(2) i{
-    margin: 0 1rem;
+    margin: 0 1.25rem;
 }

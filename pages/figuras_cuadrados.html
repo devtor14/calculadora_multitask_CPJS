@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;900&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/phone.css">
+    <title>Calculadora Multifuncional | Curso Practico JS - Platzi</title>
+</head>
+<body class="menu-body menu-global-body" onload="eraseCookie(last)">
+    <div id="loader-container">
+        <div>
+            <div id="loader"></div>
+            <p>Cargando</p>
+        </div>
+    </div>
+    <header>
+        <section>
+            <a onclick="move('../pages/home_figuras.html')">
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+        </section>
+    </header>
+    <main class="main-form">
+        <section>
+            <h1 class="main-title">Cuadrados</h1>
+        </section>
+        <form id="form">
+            <section>
+                <label class="form-label" for="medida">Lados (cm)</label>
+                <div class="form-input">
+                    <input id="medida" type="number">
+                    <p>cm</p>
+                </div>
+            </section>
+        </form>
+        <div class="buttons-container">
+            <button id="but1" class="buttons doubleButton" onClick="calcularAreaCuadrado()">Área</button>
+            <button id="but2" class="buttons doubleButton" onClick="calcularPerimetroCuadrado()">Perímetro</button>
+        </div>
+        <section>
+            <label class="form-label" for="res" id="resTitle">Resultado</label>
+                <div class="form-input">
+                    <input id="res" type="number">
+                    <p id="cmRes">cm</p>
+                </div>
+                <button id="but3" class="buttons formButton" onClick="restart()" disabled="true">Reiniciar</button>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <a onclick="about('../pages/figuras_cuadrados.html','../pages/about.html')">Sobre mí<a>
+        </section>
+        <div>
+            <a href="https://www.facebook.com/hector14800">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/hector_14oo/">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/hector14oo/">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </div>
+    </footer>
+    <script src="../scripts/global.js"></script>
+    <script src="../scripts/figuras.js"></script>
+    <script src="https://kit.fontawesome.com/2ec14f6702.js" crossorigin="anonymous"></script>
+</body>
+</html>

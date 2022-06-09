@@ -5,25 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;900&family=Lobster&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/phone.css">
+    <link rel="stylesheet" href="../styles/phone.css">
     <title>Calculadora Multifuncional | Curso Practico JS - Platzi</title>
 </head>
 <body class="menu-body menu-global-body" onload="eraseCookie(last)">
+    <div id="loader-container">
+        <div>
+            <div id="loader"></div>
+            <p>Cargando</p>
+        </div>
+    </div>
     <header>
         <section>
-            <a onclick="move('../html/home_figuras.html')">
+            <a onclick="move('../pages/figuras_menu_triangulos.html')">
                 <i class="fa-solid fa-arrow-left"></i>
+            </a>
+        </section>
+        <section>
+            <a onclick="move('../pages/home_figuras.html')">
+                <i class="fa-solid fa-house"></i>
             </a>
         </section>
     </header>
     <main class="main-form">
         <section>
-            <h1 class="main-title">Cuadrados</h1>
+            <h1 class="main-title">Triángulos</h1>
         </section>
-        <form>
+        <form class="triangle-form">
             <section>
-                <label class="form-label" for="lado">Lados (cm)</label>
-                <div class="form-input">
+                <label class="form-label" for="lado">Lado #1 (cm)</label>
+                <div class="form-input triangle-input">
+                    <input id="lado" type="number">
+                    <p>cm</p>
+                </div>
+            </section>
+            <section>
+                <label class="form-label" for="lado">Lado #2 (cm)</label>
+                <div class="form-input triangle-input">
+                    <input id="lado" type="number">
+                    <p>cm</p>
+                </div>
+            </section>
+            <section>
+                <label class="form-label" for="lado">Base (cm)</label>
+                <div class="form-input triangle-input">
+                    <input id="lado" type="number">
+                    <p>cm</p>
+                </div>
+            </section>
+            <section>
+                <label class="form-label" for="lado">Altura (cm)</label>
+                <div class="form-input triangle-input">
                     <input id="lado" type="number">
                     <p>cm</p>
                 </div>
@@ -39,12 +71,12 @@
                     <input id="lado" type="number">
                     <p>cm</p>
                 </div>
-                <button class="buttons formButton" onClick="">Reiniciar</button>
+                <button class="buttons buttonsIsos" onClick="">Reiniciar</button>
         </section>
     </main>
     <footer>
         <section>
-            <a onclick="about('../html/figuras_cuadrados.html','../html/about.html')">Sobre mí<a>
+            <a onclick="about('../pages/figuras_triangulos.html','../pages/about.html')">Sobre mí<a>
         </section>
         <div>
             <a href="https://www.facebook.com/hector14800">

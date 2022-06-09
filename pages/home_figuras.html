@@ -5,10 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;900&family=Lobster&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/phone.css">
+    <link rel="stylesheet" href="../styles/phone.css">
     <title>Calculadora Multifuncional | Curso Practico JS - Platzi</title>
 </head>
 <body class="menu-body menu-global-body" onload="eraseCookie(last)">
+    <div id="loader-container">
+        <div>
+            <div id="loader"></div>
+            <p>Cargando</p>
+        </div>
+    </div>
     <header>
         <section>
             <a onclick="move('../index.html')">
@@ -22,14 +28,14 @@
             <p class="main-subtitle">Seleccione la figura con la que desee hacer cálculos</p>
         </section>
         <div>
-            <button class="buttons" onClick="move('../html/figuras_cuadrados.html')">Cuadrados</button>
-            <button class="buttons" onClick="move('../html/figuras_menu_triangulos.html')">Triángulos</button>
-            <button class="buttons" onClick="move('../html/figuras_circulos.html')">Círculos</button>
+            <button class="buttons" onClick="move('../pages/figuras_cuadrados.html')">Cuadrados</button>
+            <button class="buttons" onClick="move('../pages/figuras_menu_triangulos.html')">Triángulos</button>
+            <button class="buttons" onClick="move('../pages/figuras_circulos.html')">Círculos</button>
         </div>
     </main>
     <footer>
         <section>
-            <a onclick="about('../html/home_figuras.html','../html/about.html')">Sobre mí<a>
+            <a onclick="about('../pages/home_figuras.html','../pages/about.html')">Sobre mí<a>
         </section>
         <div>
             <a href="https://www.facebook.com/hector14800">
