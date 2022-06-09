@@ -15,6 +15,7 @@ body{
     background-image: url(../assets/wallpaper.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    transition-duration: 500ms;
 }
 a{
     text-decoration: none;
