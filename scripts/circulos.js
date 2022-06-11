@@ -30,7 +30,7 @@ function areaCirculo(radio){
             disable();
         }else{
             alert("Por favor, asegurese de lo siguiente:\n\nDebe introducir un número mayor a 0.");
-            if(value == "" || value < 0){
+            if(value == "" || value <= 0){
                 document.getElementById("input1").className = "inputError";
                 document.getElementById("medida1").focus(); 
                 setTimeout(() =>{
@@ -54,7 +54,7 @@ function areaCirculo(radio){
             disable();
         }else{
             alert("Por favor, asegurese de lo siguiente:\n\nDebe introducir un número mayor a 0.");
-            if(value == "" || value < 0){
+            if(value == "" || value <= 0){
                 document.getElementById("input1").className = "inputError";
                 document.getElementById("medida1").focus(); 
                 setTimeout(() =>{

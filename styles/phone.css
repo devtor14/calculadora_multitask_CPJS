@@ -332,6 +332,14 @@ form section{
     width: 49%;
 }
 
+/* ------MMP STYLES------ */
+
+/* PROMEDIO STYLES */
+
+.inputMMP input{
+    width: 100%;
+}
+
 /* ------ABOUT ME STYLES------ */
 
 /* MAIN */

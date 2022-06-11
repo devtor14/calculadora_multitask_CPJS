@@ -27,21 +27,21 @@ function areaTriangulo(base, altura){
             disableTriangles();
         }else{
             alert("Por favor, asegurese de lo siguiente:\n\nDebe introducir un número mayor a 0.\n\nPara calcular el Area necesita introducir las medidas de Lado #1, Lado #2 y Base");
-            if(lado1 == "" || value < 0){
+            if(lado1 == "" || lado1 <= 0){
                 document.getElementById("input1").className = "inputError";
                 document.getElementById("medida1").value = ""; 
                 document.getElementById("medida1").focus(); 
                 setTimeout(() =>{
                     document.getElementById("input1").className = "form-input";
                 }, 2000)
-            }else if(lado2 == "" || value < 0){
+            }else if(lado2 == "" || lado2 <= 0){
                 document.getElementById("input2").className = "inputError";
                 document.getElementById("medida2").value = "";
                 document.getElementById("medida2").focus();
                 setTimeout(() =>{
                     document.getElementById("input2").className = "form-input";
                 }, 2000)
-            }else if(base == "" || value < 0){
+            }else if(base == "" || base <= 0){
                 document.getElementById("input3").className = "inputError";
                 document.getElementById("medida3").value = "";
                 document.getElementById("medida3").focus();
@@ -68,14 +68,14 @@ function areaTriangulo(base, altura){
             disableTriangles();
         }else{
             alert("Por favor, asegurese de lo siguiente:\n\nDebe introducir un número mayor a 0.\n\nPara calcular el Area necesita introducir las medidas de Base y Altura");
-            if(base == ""){
+            if(base == "" || base <= 0){
                 document.getElementById("input3").className = "inputError";
                 document.getElementById("medida3").value = ""; 
                 document.getElementById("medida3").focus(); 
                 setTimeout(() =>{
                     document.getElementById("input3").className = "form-input";
                 }, 2000) 
-            }else if(altura == ""){
+            }else if(altura == "" || altura <= 0){
                 document.getElementById("input4").className = "inputError";
                 document.getElementById("medida4").value = ""; 
                 document.getElementById("medida4").focus(); 

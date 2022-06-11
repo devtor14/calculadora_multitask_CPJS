@@ -26,7 +26,7 @@ function areaCuadrado(lado){
             disable();
         }else{
             alert("Por favor, asegurese de lo siguiente:\n\nDebe introducir un número mayor a 0.");
-            if(value == "" || value < 0){
+            if(value == "" || value <= 0){
                 document.getElementById("input").className = "inputError";
                 document.getElementById("medida").value = ""; 
                 document.getElementById("medida").focus(); 
@@ -50,7 +50,7 @@ function areaCuadrado(lado){
             disable();
         }else{
             alert("Por favor, asegurese de lo siguiente:\n\nDebe introducir un número mayor a 0.");
-            if(value == "" || value < 0){
+            if(value == "" || value <= 0){
                 document.getElementById("input").className = "inputError";
                 document.getElementById("medida").value = ""; 
                 document.getElementById("medida").focus(); 

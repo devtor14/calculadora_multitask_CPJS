@@ -74,19 +74,19 @@ function areaTrianguloIsos(lados, base){
             disableIsos();
         }else{
             alert("Por favor, asegurese de lo siguiente:\n\nDebe introducir un número mayor a 0.\n\nPara calcular El perímetro de un Triángulo Isóscele necesita las medidas de Lado #1, Lado #2 (Lado 1 y 2 deben ser iguales) y Base");
-            if(lado1 == "" || value < 0 || lado1 < lado2){
+            if(lado1 == "" || lado1 <= 0 || lado1 < lado2){
                 document.getElementById("input1").className = "inputError";
                 document.getElementById("medida1").focus(); 
                 setTimeout(() =>{
                     document.getElementById("input1").className = "form-input";
                 }, 2000)  
-            }else if(lado2 == "" || value < 0 || lado2 < lado1){
+            }else if(lado2 == "" || lado2 <= 0 || lado2 < lado1){
                 document.getElementById("input2").className = "inputError";
                 document.getElementById("medida2").focus(); 
                 setTimeout(() =>{
                     document.getElementById("input2").className = "form-input";
                 }, 2000) 
-            }else if(base == "" || value < 0){
+            }else if(base == "" || base <= 0){
                 document.getElementById("input3").className = "inputError";
                 document.getElementById("medida3").value = ""; 
                 document.getElementById("medida3").focus(); 
@@ -115,19 +115,19 @@ function areaTrianguloIsos(lados, base){
             disableIsos();
         }else{
             alert("Por favor, asegurese de lo siguiente:\n\nDebe introducir un número mayor a 0.\n\nPara calcular el área de un Triángulo Isóscele necesita las medidas de Lado #1, Lado #2 (Lado 1 y 2 deben ser iguales) y Base");
-            if(lado1 == "" || lado1 < lado2){
+            if(lado1 == "" || lado1 <= 0 ||  lado1 < lado2){
                 document.getElementById("input1").className = "inputError";
                 document.getElementById("medida1").focus(); 
                 setTimeout(() =>{
                     document.getElementById("input1").className = "form-input";
                 }, 2000)  
-            }else if(lado2 == "" || lado2 < lado1){
+            }else if(lado2 == "" || lado2 <= 0 || lado2 < lado1){
                 document.getElementById("input2").className = "inputError";
                 document.getElementById("medida2").focus(); 
                 setTimeout(() =>{
                     document.getElementById("input2").className = "form-input";
                 }, 2000) 
-            }else if(base == ""){
+            }else if(base == "" || base <= 0){
                 document.getElementById("input3").className = "inputError";
                 document.getElementById("medida3").value = ""; 
                 document.getElementById("medida3").focus(); 

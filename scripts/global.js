@@ -57,6 +57,14 @@ function disabledPorDos(){
     document.getElementById("but2").disabled = true;
 }
 
+function disabledProm(){
+    document.getElementById("input").className = "inputDisabled inputMMP";
+    document.getElementById("valor").disabled = true;
+    document.getElementById("but2").disabled = true;
+    document.getElementById("but3").disabled = true;
+    document.getElementById("but4").disabled = false;
+}
+
 function disableTriangles(){
     document.getElementById("input1").className = "inputDisabled";
     document.getElementById("input2").className = "inputDisabled";
@@ -115,6 +123,29 @@ function restartPor(){
     document.getElementById("res2").value = "";
 
     document.getElementById("pre").focus();
+}
+
+function restartProm(){
+    document.getElementById("input").className = "form-input inputMMP";
+    document.getElementById("valor").disabled = false;
+    document.getElementById("but2").disabled = false;
+
+    document.getElementById("but2").style = "opacity: 0;";
+    setTimeout(() => {
+        document.getElementById("but2").style = "display: none;";
+        document.getElementById("but1").style = "display: inline;";
+    }, 250);
+    setTimeout(() => {
+        document.getElementById("but1").style = "opacity: 100;";
+    }, 250);
+    document.getElementById("but3").disabled = true;
+    document.getElementById("but4").disabled = true;
+
+    document.getElementById("form").reset();
+    document.getElementById("resTitle").innerText = "Resultado";
+    document.getElementById("res").value = "";
+
+    document.getElementById("valor").focus();
 }
 
 function restartTriangles(){

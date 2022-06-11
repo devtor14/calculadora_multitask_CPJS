@@ -22,61 +22,16 @@
             </a>
         </section>
     </header>
-    <main class="main-form">
+    <main class="main-menu-container">
         <section>
-            <h1 class="main-title discounTitle">Mediana, Moda y Promedio</h1>
+            <h1 class="main-title">Mediana, Moda y Promedio</h1>
+            <p class="main-subtitle">Seleccione la rama éstadistica con la que desee hacer calculos</p>
         </section>
-        <form class="discount-form">
-            <section>
-                <label class="form-label" for="pre">Precio</label>
-                <div class="form-input discountInput">
-                    <p>$</p>
-                    <input id="pre" type="number">
-                </div>
-            </section>
-            <section>
-                <label class="form-label" for="des">Descuento</label>
-                <div class="form-input discountInput">
-                    <input id="des" type="number">
-                    <p>%</p>
-                </div>
-            </section>
-        </form>
-        <div class="buttons-container">
-            <button class="buttons formButton" onClick="">Precio con Descuento</button>
+        <div>
+            <button class="buttons" onClick="move('../pages/MMP_mediana.html')">Mediana</button>
+            <button class="buttons" onClick="move('../pages/MMP_moda.html')">Moda</button>
+            <button class="buttons" onClick="move('../pages/MMP_promedio.html')">Promedio</button>
         </div>
-        <section class="discount-cupon">
-            <label class="form-label" for="cup">Cupón de descuento</label>
-            <div class="form-input cupon-input">
-                <input id="cup" list="cupones">
-                <datalist id="cupones">
-                    <option value="VEINTE"></option>
-                    <option value="TREINTA"></option>
-                    <option value="CINCUENTA"></option>
-                </datalist>
-            </div>
-            <button class="buttons formButton" onClick="">Aplicar cupón</button>
-        </section>
-        <section>
-            <p class="form-label res-label">Total</p>
-            <section class="resul-des">
-                <section>
-                    <label class="form-label" for="res1">Con decuento</label>
-                    <div class="form-input">
-                        <p>$</p>
-                        <input id="res1" type="number">
-                    </div>
-                </section>
-                <section>
-                    <label class="form-label" for="res2">Descuento + Cupón</label>
-                    <div class="form-input">
-                        <p>$</p>
-                        <input id="res2" type="number">
-                    </div>
-                </section>
-                <button class="buttons formButton" onClick="">Reiniciar</button>
-            </section>
-        </section>
     </main>
     <footer>
         <section>

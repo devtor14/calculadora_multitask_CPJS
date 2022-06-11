@@ -34,14 +34,14 @@ function calcularPorcentajeDescuento(descuento){
             disabledPor();
         }else{
             alert("Por favor, asegurese de lo siguiente:\n\nDebe introducir un número mayor a 0.");
-            if(pre == "" || pre < 0){
+            if(pre == "" || pre <= 0){
                 document.getElementById("input1").className = "inputError";
                 document.getElementById("pre").value = ""; 
                 document.getElementById("pre").focus(); 
                 setTimeout(() =>{
                     document.getElementById("input1").className = "form-input discountInput";
                 }, 2000)
-            }else if(des == "" || des < 0){
+            }else if(des == "" || des <= 0){
                 document.getElementById("input2").className = "inputError discountInput";
                 document.getElementById("des").value = ""; 
                 document.getElementById("des").focus(); 
@@ -72,7 +72,7 @@ function calcularPorcentajeDescuento(descuento){
                 resultado.value = totalCon;
                 disabledPorDos();
             }else{
-                alert("Por favor, asegurese de lo siguiente:\n\nDebe introducir un cupon de descuento válido.");
+                alert(`El cupón "${seleccion}" no es un cupón válido.`);
                 document.getElementById("input3").className = "inputError cupon-input";
                 document.getElementById("cup").value = ""; 
                 document.getElementById("cup").focus(); 
@@ -82,7 +82,7 @@ function calcularPorcentajeDescuento(descuento){
             }
         }else{
             alert("Por favor, asegurese de lo siguiente:\n\nDebe introducir un cupon de descuento válido.");
-            if(seleccion == "" || seleccion > 0){
+            if(seleccion == "" || seleccion >= 0 || seleccion <= 0){
                 document.getElementById("input3").className = "inputError cupon-input";
                 document.getElementById("cup").value = ""; 
                 document.getElementById("cup").focus(); 
