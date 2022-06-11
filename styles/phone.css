@@ -20,6 +20,9 @@ body{
 a{
     text-decoration: none;
 }
+input::-webkit-inner-spin-button, input::-webkit-outer-spin-button{
+    appearance: none;
+}
 
 /* ------LOAD SCREEN STYLES------ */
 
@@ -203,7 +206,10 @@ form section{
 
     text-shadow: .1rem .2rem .1rem black;
 }
-.form-input{
+.form-input,
+.form-input-res, 
+.inputDisabled,
+.inputError{
     width: 100%;
     padding: 1rem;
     margin-bottom: 1rem;
@@ -216,11 +222,23 @@ form section{
     border-radius: .6rem;
     transition-duration: 500ms;
 }
+.inputDisabled{
+    background-color: rgba(0, 0, 0, 0.25);
+    border: .1rem solid rgba(0, 0, 0, 0.25);
+    transition-duration: 500ms;
+}
+.inputError{
+    border-color: rgb(255, 56, 56);
+    transition-duration: 500ms;
+}
 .form-input:hover{
     background-color: rgba(0, 0, 0, 0.75);
     border-color: white;
 }
-.form-input input{
+.form-input input,
+.form-input-res input,
+.inputDisabled input,
+.inputError input{
     width: 90%;
     height: 100%;
 
@@ -233,7 +251,10 @@ form section{
     border: none;
     text-shadow: 0 .1rem .1rem black;
 }
-.form-input p{
+.form-input p,
+.form-input-res p,
+.inputDisabled p,
+.inputError p{
     font-size: 1.4rem;
 }
 .buttons-container{
@@ -298,7 +319,7 @@ form section{
 .cupon-input input{
     width: 100%;
 }
-.res-label{
+.resLabel{
     margin-bottom: .5rem;
     text-align: center;
 }

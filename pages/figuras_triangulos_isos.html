@@ -31,41 +31,41 @@
         <section>
             <h1 class="main-title">Triángulos Isósceles</h1>
         </section>
-        <form class="isos-form">
+        <form id="form" class="isos-form">
             <section>
-                <label class="form-label" for="lado">Lado #1 (cm)</label>
-                <div class="form-input isos-input">
-                    <input id="lado" type="number">
+                <label class="form-label" for="medida1">Lado #1 (cm)</label>
+                <div id="input1" class="form-input isos-input">
+                    <input id="medida1" type="number">
                     <p>cm</p>
                 </div>
             </section>
             <section>
-                <label class="form-label" for="lado">Lado #2 (cm)</label>
-                <div class="form-input isos-input">
-                    <input id="lado" type="number">
+                <label class="form-label" for="medida2">Lado #2 (cm)</label>
+                <div id="input2" class="form-input isos-input">
+                    <input id="medida2" type="number">
                     <p>cm</p>
                 </div>
             </section>
             <section>
-                <label class="form-label" for="lado">Base (cm)</label>
-                <div class="form-input">
-                    <input id="lado" type="number">
+                <label class="form-label" for="medida3">Base (cm)</label>
+                <div id="input3" class="form-input">
+                    <input id="medida3" type="number">
                     <p>cm</p>
                 </div>
             </section>
         </form>
         <div class="isos-buttons-container">
-            <button class="buttons buttonsIsos" onClick="">Área</button>
-            <button class="buttons buttonsIsos" onClick="">Altura</button>
-            <button class="buttons buttonsIsos" onClick="">Perímetro</button>
+            <button id="but1" class="buttons buttonsIsos" onClick="calcularAreaTrianguloIsos()">Área</button>
+            <button id="but2" class="buttons buttonsIsos" onClick="calcularAlturaTrianguloIsos()">Altura</button>
+            <button id="but3" class="buttons buttonsIsos" onClick="calcularPerimetroTrianguloIsos()">Perímetro</button>
         </div>
         <section>
-            <label class="form-label" for="lado">Resultado</label>
-                <div class="form-input">
-                    <input id="lado" type="number">
-                    <p>cm</p>
+            <label id="resTitle" class="form-label" for="res">Resultado</label>
+                <div class="form-input-res">
+                    <input id="res" type="number" readonly>
+                    <p id="cmRes">cm</p>
                 </div>
-                <button class="buttons formButton" onClick="">Reiniciar</button>
+                <button id="but4" class="buttons formButton" onClick="restartIsos()" disabled>Reiniciar</button>
         </section>
     </main>
     <footer>
@@ -85,6 +85,7 @@
         </div>
     </footer>
     <script src="../scripts/global.js"></script>
+    <script src="../scripts/triangulosIsos.js"></script>
     <script src="https://kit.fontawesome.com/2ec14f6702.js" crossorigin="anonymous"></script>
 </body>
 </html>

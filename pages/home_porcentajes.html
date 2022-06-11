@@ -26,55 +26,55 @@
         <section>
             <h1 class="main-title discounTitle">Porcentajes y Descuentos</h1>
         </section>
-        <form class="discount-form">
+        <form id="form" class="discount-form">
             <section>
                 <label class="form-label" for="pre">Precio</label>
-                <div class="form-input discountInput">
+                <div id="input1" class="form-input discountInput">
                     <p>$</p>
                     <input id="pre" type="number">
                 </div>
             </section>
             <section>
                 <label class="form-label" for="des">Descuento</label>
-                <div class="form-input discountInput">
+                <div id="input2" class="form-input discountInput">
                     <input id="des" type="number">
                     <p>%</p>
                 </div>
             </section>
         </form>
         <div class="buttons-container">
-            <button class="buttons formButton" onClick="">Precio con Descuento</button>
+            <button id="but1" class="buttons formButton" onClick="calcularPrecioTotal()">Precio con Descuento</button>
         </div>
         <section class="discount-cupon">
             <label class="form-label" for="cup">Cupón de descuento</label>
-            <div class="form-input cupon-input">
-                <input id="cup" list="cupones">
+            <div id="input3" class="inputDisabled cupon-input">
+                <input id="cup" list="cupones" disabled>
                 <datalist id="cupones">
-                    <option value="VEINTE"></option>
-                    <option value="TREINTA"></option>
-                    <option value="CINCUENTA"></option>
+                    <option value="VEINTE">VEINTE</option>
+                    <option value="TREINTA">TREINTA</option>
+                    <option value="CINCUENTA">CINCUENTA</option>
                 </datalist>
             </div>
-            <button class="buttons formButton" onClick="">Aplicar cupón</button>
+            <button id="but2" class="buttons formButton" onClick="calcularPrecioCupon()" disabled>Aplicar cupón</button>
         </section>
         <section>
-            <p class="form-label res-label">Total</p>
+            <p class="form-label resLabel">Total</p>
             <section class="resul-des">
                 <section>
                     <label class="form-label" for="res1">Con decuento</label>
-                    <div class="form-input">
+                    <div class="form-input-res">
                         <p>$</p>
-                        <input id="res1" type="number">
+                        <input id="res1" type="number" readonly>
                     </div>
                 </section>
                 <section>
                     <label class="form-label" for="res2">Descuento + Cupón</label>
-                    <div class="form-input">
+                    <div class="form-input-res">
                         <p>$</p>
-                        <input id="res2" type="number">
+                        <input id="res2" type="number" readonly>
                     </div>
                 </section>
-                <button class="buttons formButton" onClick="">Reiniciar</button>
+                <button id="but3" class="buttons formButton" onClick="restartPor()" disabled>Reiniciar</button>
             </section>
         </section>
     </main>
@@ -95,6 +95,7 @@
         </div>
     </footer>
     <script src="../scripts/global.js"></script>
+    <script src="../scripts/porcentajes.js"></script>
     <script src="https://kit.fontawesome.com/2ec14f6702.js" crossorigin="anonymous"></script>
 </body>
 </html>

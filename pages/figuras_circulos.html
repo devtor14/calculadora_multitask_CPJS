@@ -26,26 +26,26 @@
         <section>
             <h1 class="main-title">Circulos</h1>
         </section>
-        <form>
+        <form id="form">
             <section>
-                <label class="form-label" for="lado">Radio (cm)</label>
-                <div class="form-input">
-                    <input id="lado" type="number">
+                <label class="form-label" for="medida1">Radio (cm)</label>
+                <div id="input1" class="form-input">
+                    <input id="medida1" type="number">
                     <p>cm</p>
                 </div>
             </section>
         </form>
         <div class="buttons-container">
-            <button class="buttons doubleButton" onClick="">Área</button>
-            <button class="buttons doubleButton" onClick="">Perímetro</button>
+            <button class="buttons doubleButton" onClick="calcularAreaCirculo()">Área</button>
+            <button class="buttons doubleButton" onClick="calcularPerimetroCirculo()">Perímetro</button>
         </div>
         <section>
-            <label class="form-label" for="lado">Resultado</label>
-                <div class="form-input">
-                    <input id="lado" type="number">
-                    <p>cm</p>
+            <label id="resTitle" class="form-label" for="res">Resultado</label>
+                <div class="form-input-res">
+                    <input id="res" type="number" readonly>
+                    <p id="cmRes">cm</p>
                 </div>
-                <button class="buttons formButton" onClick="">Reiniciar</button>
+                <button class="buttons formButton" onClick="restart()">Reiniciar</button>
         </section>
     </main>
     <footer>
